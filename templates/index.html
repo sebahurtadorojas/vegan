@@ -7,9 +7,10 @@
   </head>
   <body>
 
-<div class="success">"la puta madre"div"</div>
+<div class="success">{{headline}}</div>
 <div class="warning">"la puta madre"div"</div>
 <div class="error">"la puta madre"div"</div>
+
 
 
 
@@ -34,6 +35,21 @@
       <li><a href="#section2">Section 2</a></li>
       <li><a href="#section3">Section 3</a></li>
     </ul>
+
+
+
+
+  <h1>Lista</h1>
+  <ul>
+    {% for list in lista %}
+      <li>{{ list }}</li>
+    {% endfor %}
+  </ul>
+
+
+  <a href="{{ url_for('more') }}">see more...</a>
+
+
 
 
     <h2 id="section1">Section1</h2>
